@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ELISE｜過去生を、今の自分を理解するために使う</title>
+<meta name="description" content="過去生と魂を、感覚ではなく言葉で理解する無料の動画講座。全13回と回答動画を、LINEでプレイリストにしてまとめてお届けします。">
+<meta property="og:title" content="ELISE｜過去生を、今の自分を理解するために使う">
+<meta property="og:description" content="過去生と魂を、感覚ではなく言葉で理解する無料の動画講座。全13回＋回答動画。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1f2430;
+    --sub:#5b6170;
+    --paper:#f7f4ee;
+    --paper2:#efeae0;
+    --night:#221d33;
+    --moon:#e6d9b8;
+    --accent:#5b4b82;
+    --line:#06c755;
+    --rule:#d9d2c3;
+    --maxw:720px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    color:var(--ink);background:var(--paper);
+    line-height:2;font-size:16px;letter-spacing:.03em;
+    -webkit-font-smoothing:antialiased;
+  }
+  .serif{font-family:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  section{padding:84px 0;border-top:1px solid var(--rule)}
+  section.alt{background:var(--paper2)}
+  h2{
+    font-family:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+    font-size:clamp(22px,4.6vw,30px);line-height:1.6;font-weight:700;
+    margin-bottom:32px;letter-spacing:.05em;
+  }
+  h3{font-size:18px;font-weight:700;margin:36px 0 10px;line-height:1.7}
+  p{margin-bottom:1.3em}
+  .lead{font-size:17px}
+  .muted{color:var(--sub);font-size:14px}
+  .kicker{display:block;font-size:12px;letter-spacing:.3em;color:var(--accent);margin-bottom:14px;font-weight:500}
+
+  /* hero */
+  .hero{
+    background:radial-gradient(circle at 86% 9%, rgba(230,217,184,.9) 0 18px, rgba(230,217,184,.12) 19px 46px, transparent 47px),
+               linear-gradient(180deg,#221d33 0%,#2e2747 70%,#3d3560 100%);
+    color:#f3efe6;padding:96px 0 88px;border:none;text-align:center;
+  }
+  .hero .logo{font-family:"Noto Serif JP",serif;font-size:clamp(40px,10vw,64px);letter-spacing:.18em;font-weight:700;margin-bottom:6px}
+  .hero .yomi{font-size:13px;letter-spacing:.4em;color:var(--moon);margin-bottom:36px}
+  .hero .catch{font-family:"Noto Serif JP",serif;font-size:clamp(18px,4.4vw,24px);line-height:2;margin-bottom:28px}
+  .hero .tags{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:40px}
+  .hero .tags span{border:1px solid rgba(230,217,184,.6);color:var(--moon);font-size:13px;padding:4px 14px;border-radius:999px}
+  .orbit{width:min(260px,70%);height:auto;display:block;margin:0 auto 32px;opacity:.85}
+
+  /* LINE button */
+  .cta{text-align:center}
+  .btn-line{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--line);color:#fff;text-decoration:none;font-weight:700;
+    font-size:17px;padding:16px 36px;border-radius:999px;
+    box-shadow:0 6px 18px rgba(6,199,85,.28);transition:transform .15s, box-shadow .15s;
+  }
+  .btn-line:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(6,199,85,.34)}
+  .btn-line svg{width:22px;height:22px;flex:none}
+  .cta .note{display:block;margin-top:12px;font-size:13px;color:inherit;opacity:.8}
+
+  /* video */
+  .video{position:relative;width:100%;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#2a2440;margin:8px 0 18px}
+  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .video .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#cfc8b6;font-size:14px;text-align:center;padding:20px}
+
+  /* lists */
+  .pains{list-style:none;margin:8px 0 28px}
+  .pains li{padding:10px 0 10px 26px;position:relative;border-bottom:1px dashed var(--rule)}
+  .pains li::before{content:"";position:absolute;left:4px;top:24px;width:8px;height:8px;border-radius:50%;background:var(--accent);opacity:.5}
+
+  .compare{display:grid;gap:14px;margin:12px 0 24px}
+  .compare .item{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:20px 22px}
+  .compare .item b{font-size:17px}
+  .compare .item p{margin:8px 0 0;font-size:15px;color:var(--sub)}
+
+  .osdiagram{display:grid;grid-template-columns:1fr;gap:10px;margin:20px 0 28px}
+  @media(min-width:560px){.osdiagram{grid-template-columns:1fr 1fr 1fr}}
+  .osdiagram div{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:16px 18px;text-align:center}
+  .osdiagram b{display:block;font-family:"Noto Serif JP",serif;color:var(--accent);font-size:18px}
+  .osdiagram span{font-size:14px;color:var(--sub)}
+
+  .chapters{display:grid;gap:16px;margin-top:8px}
+  .chapter{background:#fff;border-left:4px solid var(--accent);border-radius:6px;padding:20px 22px}
+  .chapter .day{font-size:12px;letter-spacing:.2em;color:var(--accent);font-weight:700}
+  .chapter h3{margin:4px 0 10px;font-size:18px}
+  .chapter ol{list-style:none;font-size:15px;color:var(--sub)}
+  .chapter li{padding:6px 0;border-top:1px dashed var(--rule);line-height:1.8}
+  .chapter li:first-child{border-top:none}
+  .chapter li b{color:var(--ink);font-weight:500;margin-right:6px}
+  .chapter.extra{border-left-color:var(--moon);background:#fffdf7}
+
+  .principles{counter-reset:p;list-style:none}
+  .principles li{counter-increment:p;padding:18px 0 18px 54px;position:relative;border-bottom:1px solid var(--rule)}
+  .principles li::before{content:counter(p);position:absolute;left:0;top:16px;font-family:"Noto Serif JP",serif;font-size:30px;color:var(--accent);line-height:1}
+  .principles b{display:block;font-size:17px;margin-bottom:4px}
+  .principles span{color:var(--sub);font-size:15px}
+
+  .steps{list-style:none;margin:8px 0 28px}
+  .steps li{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--rule)}
+  .steps .n{width:36px;height:36px;border-radius:50%;background:var(--night);color:var(--moon);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;margin-top:4px}
+  .steps b{display:block}
+  .steps span{color:var(--sub);font-size:15px}
+
+  .box{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:24px 24px 8px;margin:20px 0}
+  .box.min{border:2px solid var(--accent)}
+  .box h3{margin-top:0}
+
+  .fit{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:640px){.fit{grid-template-columns:1fr 1fr}}
+  .fit .col{background:#fff;border:1px solid var(--rule);border-radius:10px;padding:22px}
+  .fit h3{margin:0 0 10px;font-size:16px}
+  .fit ul{padding-left:1.2em;font-size:15px}
+  .fit li{margin-bottom:6px}
+  .fit .no h3{color:var(--sub)}
+
+  .profile .name{font-family:"Noto Serif JP",serif;font-size:22px;font-weight:700}
+  .profile .role{color:var(--accent);font-size:14px;margin-bottom:14px}
+  .profile a{color:var(--accent)}
+
+  .acronym{list-style:none;margin:8px 0 24px}
+  .acronym li{padding:8px 0;border-bottom:1px dashed var(--rule);font-size:15px;color:var(--sub)}
+  .acronym b{display:inline-block;min-width:5.5em;font-family:"Noto Serif JP",serif;color:var(--accent);font-size:17px}
+
+  details{background:#fff;border:1px solid var(--rule);border-radius:8px;margin-bottom:10px}
+  summary{cursor:pointer;padding:16px 44px 16px 18px;font-weight:700;list-style:none;position:relative;line-height:1.7}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"Q.";color:var(--accent);margin-right:8px;font-family:"Noto Serif JP",serif}
+  summary::after{content:"+";position:absolute;right:18px;top:12px;font-size:22px;color:var(--accent);font-weight:400}
+  details[open] summary::after{content:"−"}
+  details .a{padding:0 18px 16px 18px;font-size:15px;color:var(--sub)}
+  details .a p{margin-bottom:.6em}
+
+  .closing{background:linear-gradient(180deg,#2e2747,#221d33);color:#f3efe6;text-align:center;border:none}
+  .closing h2{color:#f3efe6}
+  .closing .catch{font-family:"Noto Serif JP",serif;font-size:18px;line-height:2.2;margin-bottom:36px}
+
+  footer{background:#17132a;color:#8f8aa6;text-align:center;font-size:12px;padding:28px 0}
+</style>
+</head>
+<body>
+
+
+<!-- ===== 1. ファーストビュー ===== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="logo">ELISE</div>
+    <div class="yomi">エリス</div>
+    <svg class="orbit" viewBox="0 0 260 120" aria-hidden="true">
+      <ellipse cx="130" cy="60" rx="120" ry="34" fill="none" stroke="#e6d9b8" stroke-opacity=".35" stroke-width="1"/>
+      <ellipse cx="130" cy="60" rx="80" ry="22" fill="none" stroke="#e6d9b8" stroke-opacity=".55" stroke-width="1"/>
+      <circle cx="130" cy="60" r="11" fill="#e6d9b8" fill-opacity=".9"/>
+      <circle cx="10" cy="60" r="3" fill="#e6d9b8" fill-opacity=".7"/>
+      <circle cx="210" cy="60" r="3" fill="#e6d9b8" fill-opacity=".7"/>
+      <circle cx="178" cy="78" r="2.5" fill="#e6d9b8" fill-opacity=".6"/>
+      <circle cx="62" cy="30" r="2.5" fill="#e6d9b8" fill-opacity=".5"/>
+      <circle cx="232" cy="44" r="2" fill="#e6d9b8" fill-opacity=".4"/>
+    </svg>
+    <p class="catch">過去生を「信じる」ためではなく、<br>今の自分を理解するために。</p>
+    <div class="tags"><span>無料</span><span>全13回＋回答動画</span><span>過去生 × 自己理解</span></div>
+    <div class="cta">
+      <a class="btn-line" href="https://lin.ee/SfQZrVk" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.4 14.2 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>
+        LINEで受け取る（無料）
+      </a>
+      <span class="note">全13回の動画と回答動画を、プレイリストでまとめてお届けします</span>
+    </div>
+  </div>
+</header>
+
+<!-- ===== 2. 説明動画 ===== -->
+<section>
+  <div class="wrap">
+    <span class="kicker">NOW</span>
+    <h2>ELISEは、誰でも受け取れる<br>講座になりました</h2>
+    <p>以前のELISEは、TOGETSUを完走した方と、僕の講座を受けてくださった方だけの限定でした。1本見て課題を出してもらったら、次の動画を送る、という形です。</p>
+    <p>今は、どなたでも無料で受け取れます。LINEに登録すると、全13回の動画と、質問に答えた回答動画を、プレイリストにしてまとめてお送りします。課題の提出もいりません。</p>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/REKCOU_l0V4" title="ELISEの変更点について" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p class="muted">細かいことは、この動画で話しています。</p>
+  </div>
+</section>
+
+<!-- ===== 3. 問題提起 ===== -->
+<section class="alt">
+  <div class="wrap">
+    <h2>こんな感覚、<br>ありませんか？</h2>
+    <ul class="pains">
+      <li>なぜか昔から、強く惹かれる国や時代がある</li>
+      <li>会った瞬間から「この人を知っている」と感じたことがある</li>
+      <li>理由はわからないのに、強い恐怖や苦手意識がある</li>
+      <li>同じような人間関係を、何度も繰り返してしまう</li>
+      <li>初めてやったはずなのに、妙に得意なことがある</li>
+      <li>過去生を見てもらったことはある。でも、今の人生に活かせていない</li>
+    </ul>
+    <p>過去生を知って、「自分は昔、○○だったんだ」。<br>それだけで終わっても、今の人生はほとんど変わりません。</p>
+    <p>そのすべてを、無理に「過去生のせい」にする必要もありません。</p>
+    <p class="lead serif">ELISEで扱うのは、過去生を今世でどう使うか。</p>
+  </div>
+</section>
+
+<!-- ===== 4. ELISEの魅力 ===== -->
+<section>
+  <div class="wrap">
+    <h2>感覚でしか語られてこなかったものを、<br>言葉にしました</h2>
+    <p>過去生や魂の話は、ほとんどの場合「感じる」「見える」で語られます。聞いた瞬間はわかった気になっても、自分で使おうとすると、手がかりが残っていない。</p>
+    <p>ELISEでは、そこをできるだけわかりやすく言語化しました。</p>
+    <p>中身は、僕が昔やっていた過去生講座の教材をリメイクしたものです。正直、そこらの過去生講座よりはるかに革新的なことをやっている、と僕は思っています。</p>
+
+    <h3>ELISEの基本の考え方</h3>
+    <div class="osdiagram">
+      <div><b>魂</b><span>OS</span></div>
+      <div><b>過去生</b><span>魂に保存されたアプリ・データ</span></div>
+      <div><b>今世のあなた</b><span>それを使う人</span></div>
+    </div>
+    <p>パソコンの中にたくさんのデータが入っていても、データのひとつひとつがパソコン本体ではありません。</p>
+    <p>同じように、過去生で王だったとしても、戦士だったとしても、それが今のあなたの「正体」になるわけではない。大切なのは「昔誰だったか」より、そのデータが今の人生にどう影響していて、今の自分がそれをどう使うかです。</p>
+
+    <div class="box min">
+      <h3>13回を見終わったとき</h3>
+      <p>全13回を見終わったときの満足感は、かなりのものだと思います。実際、スピリチュアルを長く学んできた玄人の方ほど、感動してくれました。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. 全13回の中身 ===== -->
+<section class="alt" id="curriculum">
+  <div class="wrap">
+    <span class="kicker">CURRICULUM</span>
+    <h2>全13回の中身</h2>
+    <div class="chapters">
+      <div class="chapter">
+        <div class="day">第1〜4回</div>
+        <h3>過去生とは何か、どう探すか</h3>
+        <ol>
+          <li><b>第1回</b>過去生とは何か</li>
+          <li><b>第2回</b>過去生は「見えなくてもいい」</li>
+          <li><b>第3回</b>過去生データはどうやって解凍される？</li>
+          <li><b>第4回</b>過去生を「犯人」にしない</li>
+        </ol>
+      </div>
+      <div class="chapter">
+        <div class="day">第5〜8回</div>
+        <h3>人との縁と、未来とのつながり</h3>
+        <ol>
+          <li><b>第5回</b>ソウルファミリーは「運命の人」ではない</li>
+          <li><b>第6回</b>未来生の力を前借りする</li>
+          <li><b>第7回</b>「運命の相手」は変わってもいい</li>
+          <li><b>第8回</b>名前は、エネルギーを宿す器になる</li>
+        </ol>
+      </div>
+      <div class="chapter">
+        <div class="day">第9〜12回</div>
+        <h3>魂のバージョンと容量</h3>
+        <ol>
+          <li><b>第9回</b>魂のバージョンと次元移動</li>
+          <li><b>第10回</b>魂の容量を広げる</li>
+          <li><b>第11回</b>魂の容量とは何か？</li>
+          <li><b>第12回</b>魂のOSは「赦す」ほど広がる</li>
+        </ol>
+      </div>
+      <div class="chapter">
+        <div class="day">第13回</div>
+        <h3>過去生を使って、今世を生きる</h3>
+        <ol>
+          <li>13回の学びをまとめて、何を使い、何を手放し、これからどう生きるかを選びます。</li>
+        </ol>
+      </div>
+      <div class="chapter extra">
+        <div class="day">＋ 回答動画</div>
+        <h3>みなさんの質問に、動画で答えます</h3>
+        <ol>
+          <li>天野トウキのLINE公式に届いた質問に、動画で答えています。回答動画も、同じプレイリストに入っています。</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. 大事にしていること ===== -->
+<section>
+  <div class="wrap">
+    <h2>大事にしていること</h2>
+    <ol class="principles">
+      <li><b>過去生を神格化しない</b><span>「前世でこうだったから仕方がない」「過去生で特別だったから、自分も特別だ」。そんなふうに、過去生へ人生の決定権を渡しません。</span></li>
+      <li><b>人生の主導権は、今世のあなたにある</b><span>残したいものは使う。もう必要のないものは手放す。過去とは違う選択をしてもいい。</span></li>
+      <li><b>正解を押しつけない</b><span>「あなたの過去生は絶対にこれです」と信じ込ませる講座ではありません。過去生は、今の科学で十分に確かめられたものではないからです。使えるものだけ、使ってください。</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== 7. 進め方 ===== -->
+<section class="alt" id="how">
+  <div class="wrap">
+    <span class="kicker">HOW TO</span>
+    <h2>進め方</h2>
+    <ol class="steps">
+      <li><div class="n">1</div><div><b>LINEに登録する</b><span>全13回の動画と回答動画が、プレイリストでまとめて届きます。</span></div></li>
+      <li><div class="n">2</div><div><b>自分のペースで見る</b><span>1日1本でも、一気に見ても大丈夫です。</span></div></li>
+      <li><div class="n">3</div><div><b>自分自身を観察する</b><span>その回のテーマについて、自分の好き・嫌い・懐かしさ・恐怖などを眺めてみます。</span></div></li>
+    </ol>
+
+    <div class="box min">
+      <h3>課題の提出はありません</h3>
+      <p>動画を見た直後に答えが出なくても大丈夫です。数日後にふと昔の記憶を思い出したり、誰かとの会話で気づいたりすることもあります。それも全部、ELISEの一部です。</p>
+    </div>
+
+    <div class="box">
+      <h3>必要なもの</h3>
+      <p>・LINEのアカウント<br>・動画を見る時間（映像が見える力や、霊能力はいりません）</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. 向き不向き ===== -->
+<section>
+  <div class="wrap">
+    <h2>向いている人、<br>向いていない人</h2>
+    <div class="fit">
+      <div class="col">
+        <h3>こんな人に</h3>
+        <ul>
+          <li>過去生に興味はあるけれど、どう捉えればいいかわからない</li>
+          <li>過去生を見てもらったけれど、今の人生に活かせていない</li>
+          <li>スピリチュアルを学んできて、もう一段深く理解したい</li>
+          <li>自分の感覚を、言葉で整理したい</li>
+        </ul>
+      </div>
+      <div class="col no">
+        <h3>あまり向いていない人</h3>
+        <ul>
+          <li>「あなたは昔○○でした」と言い当ててほしいだけ</li>
+          <li>過去生を、今の悩みの言い訳にしたい</li>
+          <li>誰かに正解を決めてほしい</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. なぜ無料か ===== -->
+<section class="alt">
+  <div class="wrap">
+    <h2>なぜ、無料なのか</h2>
+    <p>過去生について知ること自体に、高いお金を払う必要はない。僕はそう考えています。</p>
+    <p>過去生とは何か。どう探せばいいのか。どう今世とつながっているのか。そうした基本の考え方は、ELISEでできるだけ公開しています。</p>
+    <p>まずは、自分で見られるところまで、自分で見てみてほしい。それだけでも、自分についてかなり多くのことが見えてくるはずです。</p>
+    <p>そのうえで、一人では整理できないものが出てきて、あなた個人を見る必要があるとき。そこから先が、僕の仕事です。</p>
+  </div>
+</section>
+
+<!-- ===== 10. 作った人・名前 ===== -->
+<section>
+  <div class="wrap">
+    <span class="kicker">ABOUT</span>
+    <h2>ELISEを作った人</h2>
+    <div class="profile">
+      <div class="name">天野トウキ</div>
+      <div class="role">伴走型コンサルタント／過去生リーディング</div>
+      <p>僕は普段、自分では見えなくなっている前提や思い込みを整理して、その人が自分の感覚で人生を選び直していくための伴走をしています。過去生は、そのとき使うもののひとつです。</p>
+      <p>僕自身、自分の過去生をかなり深く探究してきました。「なるほど、だから自分はこう反応するのか」と腑に落ちたこともたくさんあります。</p>
+      <p>同時に、違和感もありました。過去生を知ること自体が、目的になってしまうことです。王だった。だから今、何が残っているのか。誰かを守れなかった。その恐怖を、今も持ち続ける必要があるのか。僕が見たいのは、いつもその先です。</p>
+      <p>ELISEを作ったのも、僕の答えを覚えてほしかったからではありません。逆です。僕がいなくても、自分自身を見られるようになってほしかった。</p>
+      <p class="muted">note：<a href="https://note.com/walkun" target="_blank" rel="noopener">note.com/walkun</a>　／　YouTube：<a href="https://www.youtube.com/@walkun" target="_blank" rel="noopener">@walkun</a></p>
+    </div>
+
+    <h3 class="serif" style="margin-top:56px;font-size:20px">ELISEという名前について</h3>
+    <ul class="acronym">
+      <li><b>Echo</b>過去から今へ響いてくるもの</li>
+      <li><b>Life</b>今ここにある人生</li>
+      <li><b>Inherit</b>魂が受け継いできたデータ</li>
+      <li><b>Soul</b>それらを蓄えている魂</li>
+      <li><b>Expand</b>それを使いながら、魂を広げていくこと</li>
+    </ul>
+    <p>さらに「エリス」という響きは、僕の（レムリア時代の）母の名前でもあります。最初から母の名前をつけようとしたわけではなく、いろいろ考えた中で最後にいちばんしっくりきたものが、偶然、自分のルーツにある名前でした。</p>
+  </div>
+</section>
+
+<!-- ===== 11. FAQ ===== -->
+<section class="alt" id="faq">
+  <div class="wrap">
+    <span class="kicker">FAQ</span>
+    <h2>よくある質問</h2>
+
+    <details><summary>本当に無料ですか？</summary><div class="a"><p>無料です。受け取ったあとに、有料サービスを申し込む必要もありません。</p></div></details>
+
+    <details><summary>TOGETSUを受けていなくても受け取れますか？</summary><div class="a"><p>受け取れます。以前はTOGETSU完走者と講座の受講者だけの限定でしたが、今はどなたでも受け取れます。TOGETSUとELISEは別の講座なので、どちらからでも始められます。</p></div></details>
+
+    <details><summary>課題は提出するんですか？</summary><div class="a"><p>提出は不要です。以前は課題を出したら次の動画が届く形でしたが、今は全13回をまとめてお送りしています。</p></div></details>
+
+    <details><summary>動画の中で課題やプレゼントの話をしていますが？</summary><div class="a"><p>限定で提供していた頃の名残です。課題の提出はいりません。写真のエネルギーヒーリングなど、当時お渡ししていたプレゼントも、今はありません。</p></div></details>
+
+    <details><summary>過去生の映像が見えなくても大丈夫ですか？</summary><div class="a"><p>大丈夫です。ELISEは、映像が見えなくても、霊能力がなくても進められるように作っています。好き・嫌い・懐かしさ・恐怖など、今の自分の反応から過去生データを探っていきます。</p></div></details>
+
+    <details><summary>過去生を信じていなくても見ていいですか？</summary><div class="a"><p>かまいません。すべてを信じる必要はありません。自分の感覚と照らし合わせて、使えるところだけ使ってください。</p></div></details>
+
+    <details><summary>内容について質問できますか？</summary><div class="a"><p>ELISEのLINEは、動画をお届けするための送信専用なので、そちらでは質問を受け付けていません。</p><p>質問は、天野トウキのメインのLINE公式アカウントで受け付けています。いただいた質問には、動画でお答えします。回答動画は、ELISEのプレイリストにも追加していきます。</p></div></details>
+
+    <details><summary>全部見終わったら特典はありますか？</summary><div class="a"><p>ありません。13回の中身そのものを、受け取ってもらえたらと思っています。</p></div></details>
+
+    <details><summary>全部見るのに、どのくらいかかりますか？</summary><div class="a"><p>ペースは自由です。一気に見る人もいれば、1本ずつ時間をかけて自分を観察する人もいます。早く終わらせることが目的ではありません。</p></div></details>
+
+    <details><summary>自分の過去生を見てもらうことはできますか？</summary><div class="a"><p>ELISEは、自分で見られるようになるための講座です。そのうえで個別に見てほしい場合は、天野トウキのメインのLINE公式アカウントからご相談ください。</p></div></details>
+  </div>
+</section>
+
+<!-- ===== 12. クロージング ===== -->
+<section class="closing">
+  <div class="wrap">
+    <h2>過去を知ることは、<br>過去へ戻ることではない。</h2>
+    <p class="catch">過去から使えるものを受け取り、<br>もういらないものは手放す。<br>その続きをどう生きるかは、<br>今ここにいるあなたが決めていい。</p>
+    <div class="cta">
+      <a class="btn-line" href="https://lin.ee/SfQZrVk" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.4 14.2 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>
+        LINEで受け取る（無料）
+      </a>
+      <span class="note">登録すると、全13回と回答動画がまとめて届きます</span>
+    </div>
+  </div>
+</section>
+
+<footer>© 天野トウキ　ELISE</footer>
+
+</body>
+</html>
